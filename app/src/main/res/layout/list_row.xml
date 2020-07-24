@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/totalDayLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Total mins worked: "/>
+
+    <TextView
+        android:layout_toRightOf="@id/totalDayLbl"
+        android:id="@+id/totalDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_below="@id/totalDayLbl"
+        android:id="@+id/totalBreakLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Total break: "/>
+
+    <TextView
+        android:id="@+id/totalBreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalDay"
+        android:layout_toRightOf="@id/totalBreakLbl"
+        android:textSize="17dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/projectId"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/totalBreak"-->
+<!--        android:layout_above="@+id/date"-->
+<!--        android:textSize="17dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/date"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/projectId"-->
+<!--        android:textSize="17dp"/>-->
+
+
+
+</RelativeLayout>

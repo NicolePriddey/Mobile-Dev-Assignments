@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/breakBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/darkText"
+        android:onClick="takeBreak"
+        android:text="Take a Break"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/eodBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakBtn"
+        android:text="End Day"
+        android:backgroundTint="@color/darkText"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="endDay"
+        />
+
+    <TextView
+        android:id="@+id/workingTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workTotalLbl"
+        android:text=""
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/workTotalLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working Total"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        />
+
+
+    <TextView
+        android:id="@+id/breakTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakTotalLbl"
+        android:text=""
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/breakTotalLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break Total"
+        android:layout_below="@id/workingTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+</FrameLayout>
