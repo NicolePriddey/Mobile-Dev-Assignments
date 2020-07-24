@@ -1,22 +1,14 @@
 <resources>
-    <string name="app_name">Record it</string>
-    <string name="title_activity_settings">Settings</string>
-
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Work Day</string>
+    <string name="what_are_you_working_on_today">What are you working on today?</string>
+    <string name="start">Start</string>
+    <string name="delete">Delete</string>
+    <string name="break_length">Break Length</string>
+    <string name="back_to_work">Back to work</string>
+    <string name="take_a_break">Take a Break</string>
+    <string name="end_day">End Day</string>
+    <string name="working_total">Working Total</string>
+    <string name="break_total">Break Total</string>
+    <string name="total_mins_worked">Total mins worked: </string>
+    <string name="total_break">Total break: </string>
 </resources>

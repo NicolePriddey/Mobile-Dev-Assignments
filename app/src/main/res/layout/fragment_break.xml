@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BreakActivity">
-
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/app_bar"
-        />
+    tools:context=".BreakFragment">
 
     <TextView
         android:id="@+id/breakLenLbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Break Length"
+        android:text="@string/break_length"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         />
@@ -25,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:layout_below="@id/breakLenLbl"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
@@ -35,12 +29,11 @@
         android:id="@+id/endBreakBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to work"
+        android:text="@string/back_to_work"
         android:backgroundTint="@color/darkText"
         android:textColor="@color/white"
         android:layout_below="@id/breakLen"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:onClick="backToWork"
         />
 </RelativeLayout>

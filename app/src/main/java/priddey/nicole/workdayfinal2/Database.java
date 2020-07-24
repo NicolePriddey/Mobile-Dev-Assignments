@@ -1,18 +1,14 @@
-package priddey.nicole.assignmentone;
+package priddey.nicole.workdayfinal2;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.AsyncTask;
 import android.util.Log;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 
 public class Database extends SQLiteOpenHelper {
@@ -61,7 +57,7 @@ public class Database extends SQLiteOpenHelper {
         cValues.put(KEY_TOTAL_WORK, totalWork);
         cValues.put(KEY_TOTAL_BREAK, totalBreak);
         cValues.put(KEY_PROJECT_ID,projectID);
-        cValues.put(KEY_DATE, "04/05/20");
+        cValues.put(KEY_DATE, String.valueOf(Calendar.getInstance().getTime()));
 
         long newRowID = db.insert(TABLE_NAME, null, cValues);
         db.close();
@@ -90,7 +86,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<HashMap<String,String>> workDayList = new ArrayList<>();
 
-        String query = "SELECT totalWork, totalBreak FROM " + TABLE_NAME;
+        String query = "SELECT totalWork, totalBreak FROM " + TABLE_NAME + " ORDER BY date DESC";
         Cursor cursor = db.rawQuery(query, null);
         Log.i("cursor", "" + cursor.getCount());
 

@@ -1,4 +1,4 @@
-package priddey.nicole.assignmentone;
+package priddey.nicole.workdayfinal2;
 
 import android.content.Context;
 
@@ -21,7 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-
-        assertEquals("priddey.nicole.assignmentone", appContext.getPackageName());
+        assertEquals("priddey.nicole.workdayfinal2", appContext.getPackageName());
     }
 }

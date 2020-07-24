@@ -1,4 +1,4 @@
-package priddey.nicole.assignmentone;
+package priddey.nicole.workdayfinal2;
 
 import org.junit.Test;
 

@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkingFragment">
-
-    <!-- TODO: Update blank fragment layout -->
 
     <Button
         android:id="@+id/breakBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/breakTotal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="80dp"
         android:backgroundTint="@color/darkText"
-        android:onClick="takeBreak"
-        android:text="Take a Break"
+        android:text="@string/take_a_break"
         android:textColor="@color/white" />
 
     <Button
         android:id="@+id/eodBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/breakBtn"
-        android:text="End Day"
+        android:layout_toEndOf="@id/breakBtn"
+        android:layout_below="@+id/breakTotal"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="50dp"
         android:backgroundTint="@color/darkText"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:onClick="endDay"
-        />
+        android:text="@string/end_day"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/workingTotal"
@@ -38,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/workTotalLbl"
         android:text=""
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:layout_centerHorizontal="true"
         />
 
@@ -46,11 +42,10 @@
         android:id="@+id/workTotalLbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Working Total"
+        android:text="@string/working_total"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="110dp"
         />
-
 
     <TextView
         android:id="@+id/breakTotal"
@@ -58,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/breakTotalLbl"
         android:text=""
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:layout_centerHorizontal="true"
         />
 
@@ -66,10 +61,10 @@
         android:id="@+id/breakTotalLbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Break Total"
+        android:text="@string/break_total"
         android:layout_below="@id/workingTotal"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         />
 
-</FrameLayout>
+</RelativeLayout>
